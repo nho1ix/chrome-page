@@ -6,7 +6,7 @@
 	const interval = setInterval(() => {
 		const now = new Date();
 
-		const dateTime = zeroFill((now.getMonth() + 1)) + '/' + zeroFill(now.getUTCDate()) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours()) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
+		const dateTime = zeroFill((now.getMonth() + 1)) + '/' + zeroFill(now.getUTCDate()) + '/' + now.getFullYear() + ' ' + zeroFill(now.getHours() %12 || 12) + ':' + zeroFill(now.getMinutes()) + ':' + zeroFill(now.getSeconds());
 
 		document.getElementById("Date").innerHTML = dateTime;
 	}, 100);

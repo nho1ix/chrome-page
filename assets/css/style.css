@@ -5,7 +5,7 @@
 /* Themes */
 html.default {
 
---grid-width: 1280px;
+--grid-width: 1070px;
 --background-position: center;
 --background-size: cover;
 --background-image: none;
@@ -75,6 +75,24 @@ html.eldenring-ranni-dark-moon {
 --color-link-hover: #a260f5;
 --color-link-title: #b7acef;
 --hue-rotate: -16deg;
+--canvas-filter: brightness(0.7) contrast(0.84) hue-rotate(20deg) opacity(0.2);
+--scrollbar-primary: #5e72fc;
+
+filter: hue-rotate(var(--hue-rotate)) saturate(2) contrast(1.2);
+
+}
+
+html.two_eight {
+
+--image: url(../media/2814/2814.gif);
+--image-aspect-ratio: 3/4;
+--image-filter: hue-rotate(calc(var(--hue-rotate) / -1)) saturate(0.4) contrast(0.9);
+--color-fg: #bdbfc8;
+--color-link: #8b8a92;
+--color-link-visited: #8b82ab;
+--color-link-hover: #a260f5;
+--color-link-title: #b7acef;
+--hue-rotate: 41deg;
 --canvas-filter: brightness(0.7) contrast(0.84) hue-rotate(20deg) opacity(0.2);
 --scrollbar-primary: #5e72fc;
 
